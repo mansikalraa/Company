@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>Trainee Form</title>
+</head>
+<body>
+    <h1><center><u>{{ .title }}</u></center></h1>
+    * Required
+    <table border=0 cellspacing=0 width=100% bgcolor=grey>
+        <tr>
+            <td width=40%> &nbsp </td>
+            <td>
+            <form action="/submit" method="post">
+                <h3> 
+                E-mail* &emsp;&emsp;&nbsp;&nbsp;&nbsp; :
+                <input type="text" name="email" required><br>
+                First Name* &emsp;:
+                <input type="text" name="firstname" required><br>
+                Last Name* &emsp; :
+                <input type="text" name="lastname" required><br>
+                Branch* &emsp;&emsp;&nbsp;&nbsp; :<br>
+                <input type="radio" name="branch" value="backend" checked required>Backend<br>
+                <input type="radio" name="branch" value="frontend" checked required>Frontend<br>
+                <input type="radio" name="branch" value="database" checked required>Database<br>
+                <input type="radio" name="branch" value="other" checked required>Other<br>
+                Batch* &emsp;&emsp;&emsp;  :
+                <input type="text" name="batch" required><br>
+                Contact* &emsp;&emsp;&nbsp; :
+                <input type="text" name="contact" required><br>
+                Gender* &emsp;&emsp;&ensp; :<br>
+                <input type="radio" name="gender" value="male" checked required>Male<br>
+                <input type="radio" name="gender" value="female" checked required>Female<br>
+                <input type="radio" name="gender" value="Trans" checked required>Trans<br>
+                
+             </td>
+        </tr>
+    </table>
+    <br>
+    <center><input type="submit" value="Submit"><br><center>
+    </h3>
+    </form>
+    <br>
+    <center><a href="/">Back</a></center>
+    </body>
+</html>
